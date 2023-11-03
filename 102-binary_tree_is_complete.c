@@ -12,7 +12,7 @@ int complete(const binary_tree_t *tree, int sz, int idx)
 {
 	if (!tree)
 		return (1);
-	if (index >= sz)
+	if (idx >= sz)
 		return (0);
 	return (complete(tree->left, sz, 2 * idx + 1) &&
 			complete(tree->right, sz, 2 * idx + 2));
@@ -46,7 +46,7 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 		size = _binary_tree_size(tree);
 		idx = 0;
 
-		return (complete(tree, size, index));
+		return (complete(tree, sz, idx));
 	}
 	return (0);
 }
