@@ -43,7 +43,7 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 
 	if (tree)
 	{
-		size = _binary_tree_size(tree);
+		sz = _binary_tree_size(tree);
 		idx = 0;
 
 		return (complete(tree, sz, idx));
