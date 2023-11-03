@@ -2,8 +2,8 @@
 
 /**
  * lt - Checks left pointers to determine insert position
- * @new: Double pointer to new
- * @current: Double pointer to pointer to tree
+ * @neww: Double pointer to new
+ * @curr: Double pointer to pointer to tree
  * @value: to insert
  * Return: 1 on success, 0 on failure, 2 if duplicate found, 3 on malloc fail
  */
@@ -30,8 +30,8 @@ int lt(bst_t **neww, bst_t **curr, int value)
 
 /**
  * gt - Checks left pointers to determine insert position
- * @new: Double pointer to new
- * @current: Double pointer to pointer to tree
+ * @neww: Double pointer to new
+ * @curr: Double pointer to pointer to tree
  * @value: to insert
  * Return: 1 on success, 0 on failure, 2 if duplicate found, 3 on malloc fail
  */
